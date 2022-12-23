@@ -1,0 +1,55 @@
+    btn_text.setOnClickListener(new View.OnClickListener() {
+//            @Override
+//            public void onClick(View v) {
+//                tv_text.setText("버튼이 클릭!!!");
+//                //클릭시 버튼 글자 바뀐다
+//
+//
+//            }
+//        });
+//        tv_text.setOnClickListener(new View.OnClickListener() {
+//
+//
+//            @Override
+//            public void onClick(View v) {
+//                btn_text.setText("텍스트뷰 클릭");
+//            }
+//        });
+        tv_text.setOnClickListener(this);
+        btn_text.setOnClickListener(this);
+
+
+        상속받는 방법
+        1. 객체 생성을 받아서 하는 방법
+        2. 객체 상속을 받아서 생성하는 방법
+
+
+        라디오 처리
+        찾으려면 find
+
+
+       rdo_1 = findViewById(R.id.rdo_1);
+       rdo_2= findViewById(R.id.rdo_2);
+
+         rdo_1.setOnCheckedChangeListener(new CompoundButton.OnCheckedChangeListener() {
+                  @Override
+                  public void onCheckedChanged(CompoundButton buttonView, boolean isChecked) {
+                     // rdo_1.setChecked();
+                      //네이밍규칙 : is 들어가면 boolean ischecked라디오 버튼이체크상태다
+                      //체크
+                      if(isChecked){
+                          rdo_2.setChecked(!isChecked);
+                      }
+                  }
+
+              });
+
+               rdo_2.setOnCheckedChangeListener(new CompoundButton.OnCheckedChangeListener() {
+                   @Override
+                   public void onCheckedChanged(CompoundButton buttonView, boolean isChecked) {
+                       //네이밍규칙 : is 들어가면 boolean ischecked라디오 버튼이체크상태다
+                       if (isChecked) {
+                           rdo_1.setChecked(false);
+                       }
+                   }
+               });

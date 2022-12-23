@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="horizontal">
+
+    <!--가로로 리니어 레이아웃을 사용하고 내부를 4등분하기
+    0.  Linear로 지정 : 부모태그에 orientation 추가
+    1.  orientation : ="horizontal"
+    2. 내부에 Linear추가하기
+    3. 넓이를 0dp지정
+    4. weight 속성 지정 : layout_weight="1"
+    -->
+
+    <LinearLayout
+        android:layout_weight="1"
+        android:background="#123"
+        android:layout_width="0dp"
+        android:layout_height="match_parent" />
+
+
+    <LinearLayout
+        android:layout_weight="1"
+        android:background="#A7C5E3"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"/>
+
+    <LinearLayout
+        android:layout_weight="1"
+        android:background="#123"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"/>
+
+    <LinearLayout
+        android:layout_weight="1"
+        android:background="#A7C5E3"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"/>
+
+
+</LinearLayout>

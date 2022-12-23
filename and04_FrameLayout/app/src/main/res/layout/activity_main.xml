@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+            <Button
+            android:layout_weight="1"
+            android:id="@+id/btn1"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:text="이전으로"
+            />
+
+        <Button
+            android:layout_weight="1"
+            android:id="@+id/btn2"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+
+            android:text="다음이미지" />
+
+    </LinearLayout>
+
+    <!--0dp와 wieght 사용하게 되면 크기를 가진 다른 뷰가 차지한 공간을 차지하고
+    나머지공간을 비율로 나눈다-->
+
+    <!--res <=화면에 보이거나 하는 모든 리소스는 res 폴더 하위에서 관리
+    유효성 검사 : 영어소문자와 특수문자는 언더바만 사용가능
+    -->
+
+    <FrameLayout
+        android:id="@+id/layout"
+        android:layout_weight="9"
+        android:layout_width="match_parent"
+        android:layout_height="0dp">
+
+        <ImageView
+            android:id="@+id/imgv1"
+            android:scaleType="fitXY"
+            android:src="@drawable/photo1"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"/>
+
+        <ImageView
+            android:visibility="gone"
+            android:id="@+id/imgv2"
+            android:scaleType="fitXY"
+            android:src="@drawable/photo2"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"/>
+
+        <!--visibility 공간-->
+
+        <ImageView
+            android:visibility="gone"
+            android:id="@+id/imgv3"
+            android:scaleType="fitXY"
+            android:src="@drawable/photo3"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"/>
+
+
+    </FrameLayout>>
+
+
+</LinearLayout>

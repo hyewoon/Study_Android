@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:orientation="vertical">
+
+<!--텍스트뷰 , 버튼
+
+리니어 레이아웃 안쪽에 텍스트뷰 1개 그리고 버튼 1개를 cnrk
+버튼 클릭하면 텍스트뷰 버튼이 클림됨이라는 글자가 나올 수 있게 처리
+1. 디자인에 위젯(==뷰, 텍스트뷰 이미지 뷰)
+2. 윗젯에 id 속성 추기
+3. 자바코드에 위젯 초기화-->
+
+
+<!--
+1. gravity : (무게 중심, 내부 정렬): 내가 가지고 있는 자식요소를 원하는 방향으로 정렬
+여러방향을 줄때는 or룰 이용해서 연결해 준다
+2. layout-gravity : 나 자신(위젯) 중력을 가지고 부모로부터 위치를 정렬한다
+-->
+  <TextView
+      android:id="@+id/tv_text"
+      android:layout_width="100dp"
+      android:layout_height="100dp"
+      android:text="텍스트뷰"
+      android:textColor="#ffffff"
+      android:background="#000000"
+      android:gravity="top|right"
+      android:layout_gravity="center"
+      android:layout_margin="10dp"
+      />
+
+    <Button
+        android:textAlignment="textEnd"
+        android:id="@+id/btn_text"
+        android:text="클릭"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+
+    <!--
+    right == end
+    left == start
+    -->
+
+    <RadioButton
+        android:id="@+id/rdo_1"
+        android:text="남"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+
+    <RadioButton
+        android:id="@+id/rdo_2"
+        android:text="여"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+    <RadioGroup
+        android:id="@+id/rdo_grp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <RadioButton
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="아주 나쁨"/>
+
+        <RadioButton
+
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="나쁨"/>
+
+
+        <RadioButton
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="보통"/>
+
+        <RadioButton
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="좋음"/>
+
+        <RadioButton
+
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="아주 좋음"/>
+
+
+
+    </RadioGroup>
+
+    <EditText
+        android:hint="아이디를 입력하세요"
+        android:id="@+id/edt_id"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+    <EditText
+        android:hint="비밀번호를 입력하세요"
+        android:id="@+id/edt_pw"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+
+    <Button
+        android:text="로그인"
+        android:id="@+id/btn_login"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+
+
+
+
+
+
+
+</LinearLayout>

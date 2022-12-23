@@ -1,0 +1,29 @@
+
+     메소드 하기 전
+
+     btn1.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {//OnclickList.onClick(btn);
+                //0 -2-1-0-2-1
+                cnt --;
+                if(cnt == -1) cnt =2;
+                //조건 -1되면 안됨
+                Log.d("로그1", "btn1" + cnt);
+                for(int i =0 ; i< imgList.size(); i++){
+                    imgList.get(cnt).setVisibility(View.GONE);
+                }
+                imgList.get(cnt).setVisibility(View.VISIBLE);
+            }
+        });
+
+
+        /* btn2(다음이미지) : 이미지 1 >> 이미지2 >> 이미지3 >> 이미지1 */
+        btn2.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                cnt++;
+                Log.d("로그2", "btn1");
+                //조건 3이 되면 안됨
+                if(cnt == 3) cnt = 0;
+            }
+        });
