@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".SubFragment"
+    android:background="#03A9F4">
+
+    <!-- TODO: Update blank fragment layout -->
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:text="@string/hello_blank_fragment" />
+
+    <Button
+        android:id="@+id/btn_sub_frag"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="서브플래그먼트"/>
+
+    <FrameLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+
+
+
+    <ImageView
+        android:id="@+id/img1"
+        android:src="@drawable/photo1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        />
+
+    <ImageView
+        android:visibility="gone"
+        android:id="@+id/img2"
+        android:src="@drawable/photo2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        />
+
+    </FrameLayout>
+
+</FrameLayout>

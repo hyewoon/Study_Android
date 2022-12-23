@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.core.widget.NestedScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".friendlist.FriendFragment"
+    android:orientation="vertical"
+    >
+
+    <!--NestedScrollView : 스크롤뷰는 하나의 자식요소만 가질 수 있기 때문에 여러개의 요소가 있다가면 하나로 꼭 묶어주기-->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+
+
+  <ImageView
+      android:layout_margin="5dp"
+      android:scaleType="fitXY"
+      android:src="@drawable/banner"
+      android:layout_width="match_parent"
+      android:layout_height="120dp"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:layout_margin="10dp"
+            android:layout_width="70dp"
+            android:layout_height="60dp"
+            android:src="@drawable/profile_img1"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+        <TextView
+            android:textSize="20dp"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="친구이름"/>
+
+        <TextView
+            android:textSize="20dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="상태메세지"/>
+
+        </LinearLayout>
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_margin="10dp"
+        android:background="#D6D6D6"/>
+
+    <TextView
+        android:layout_margin="10dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="친구734"/>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recv_friend_frag"
+        android:layout_width="match_parent"
+        android:layout_weight="1"
+        android:layout_height="0dp"
+        android:padding="10dp"/>
+
+
+    </LinearLayout>
+
+</androidx.core.widget.NestedScrollView>
