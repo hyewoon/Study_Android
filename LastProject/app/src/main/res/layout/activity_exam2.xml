@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".exam.ExamActivity"
+    android:orientation="vertical">
+
+    <Button
+        android:gravity="center"
+        android:id="@+id/test1"
+        android:text="test1요청"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+    <Button
+        android:backgroundTint="#2196F3"
+        android:gravity="center"
+        android:id="@+id/test2"
+        android:text="test2요청"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+    <Button
+        android:backgroundTint="#2196F3"
+        android:gravity="center"
+        android:id="@+id/test3"
+        android:text="test3요청"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+    <Button
+        android:backgroundTint="#2196F3"
+        android:gravity="center"
+        android:id="@+id/test4"
+        android:text="test4요청"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+    <Button
+        android:backgroundTint="#2196F3"
+        android:gravity="center"
+        android:id="@+id/test5"
+        android:text="test5요청"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+
+</LinearLayout>

@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".member.LoginActivity"
+    android:orientation="vertical">
+
+    <ImageView
+        android:scaleType="fitXY"
+        android:src="@drawable/photo5"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"/>
+
+    <TextView
+        android:gravity="center"
+        android:textSize="18dp"
+        android:text="@string/login_text"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+    <EditText
+        android:id="@+id/edt_id"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="아이디입력"/>
+
+    <EditText
+        android:id="@+id/edt_pw"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="비밀번호 입력"/>
+
+    <Button
+        android:id="@+id/btn_login"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="로그인"/>
+
+    <Button
+        android:id="@+id/btn_join"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="회원가입"/>
+
+
+    <ImageView
+        android:id="@+id/imgv_kakao_login"
+        android:src="@drawable/kaka0_login"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+    <com.navercorp.nid.oauth.view.NidOAuthLoginButton
+        android:layout_marginTop="10dp"
+        android:id="@+id/buttonOAuthLoginImg"
+        android:layout_width="wrap_content"
+        android:layout_height="50dp" />
+
+</LinearLayout>
